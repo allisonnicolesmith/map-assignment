@@ -1,0 +1,110 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    font-size: 13px;
+}
+
+.headline_container {
+    margin: 0 auto;
+}
+
+h1 {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/990140/download.png) -20px -20px no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+    font-size: 8.4vw;
+    font-family: Arial;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-size: cover;
+    letter-spacing: 9px;
+}
+
+h2 {
+    font-size: 3vw;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+    margin-top: -40px;
+    font-family: "Abril Fatface";
+}
+
+p {
+    color: #000;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 2em;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #f67246;
+    line-height: 2px;
+}
+
+.content {
+    color: #568582;
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: italic;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.main_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.map_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+********************************************************************* YOUR TABLET/DESKTOP STYLES GO HERE *********************************************************************/ @media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    /*********************************************************************
+      YOUR DESKTOP-ONLY STYLES GO HERE
+    *********************************************************************/
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here.
+        Note these styles will be applied to anything 729px or larger -- so desktop */
+    }
